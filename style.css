@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    
+    background-color: rgb(56, 78, 141);
+    width: fit-content;
+    
+    height: max-content;
+    padding: 20px;
+    border-radius: 15px;
+   margin-top: 100px;
+    box-shadow: 0 8px 8px -4px;
+    
+}
+#box{
+   border: 0.2px solid  rgb(15, 15, 15);
+}
+
+#box div:nth-child(odd){
+    height: max-content;
+    background-color: rgb(255, 241, 224);
+    color: rgb(15, 15, 15);
+}
+#box div:nth-child(even){
+    background-color: rgb(39, 108, 148);
+    color: rgb(15, 15, 15);
+    height: max-content;
+}
+.line{
+    height: fit-content;
+    display: flex;
+}
+
+
+.name{
+    padding-left: 10px;
+    position: relative;
+    flex: 30%;
+    border-right: 1px solid black;
+    height: auto;
+    background-color: rgba(112, 112, 255, 0.7);
+}
+
+.msg{
+    position: relative;
+    flex: 70%;
+}
+
+textarea{
+    width: 400px;
+}
+
+button{
+    border-radius: 6px;
+    border: none;
+}
+
