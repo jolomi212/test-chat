@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
     if (isset($post['message'])) {
         $msg = $post['message'];
         $write = fopen('chat.txt', 'a');
-        fwrite($write, "<div class ='line'><span class='name $name'>$name</span>: <span class='msg'>$msg</span></div>");
+        fwrite($write, "<div class ='line'><span class='name $name'>$name</span> <span class='msg'>$msg</span></div>");
         fclose($write);
     }
     $length = filesize('chat.txt');
@@ -23,6 +23,8 @@ if (!isset($_SESSION['user'])) {
 
     if (isset($post['logout'])) {
         fopen('chat.txt', 'w');
+        $write =  fopen('chat.txt', 'a');
+        fwrite($write, "<div class = 'line'><span class='join'>User $name has left the chat. <br> All chats cleared</span></div>");
         session_unset();
     }
 }

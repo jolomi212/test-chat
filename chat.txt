@@ -1,1 +1,1 @@
-<div class ='line'><span class='name Hey'>Hey</span>: <span class='msg'>Hey</span></div><div class ='line'><span class='name Hey'>Hey</span>: <span class='msg'>What are you doing?</span></div>
+<div class = 'line'><span class='join'>User Jolomisan has left the chat. <br> All chats cleared</span></div>
